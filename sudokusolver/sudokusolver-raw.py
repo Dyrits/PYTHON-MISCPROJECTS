@@ -1,16 +1,14 @@
-
 Grid = [[0, 3, 2, 0, 0, 0, 5, 0, 0],[4, 0, 0, 2, 0, 0, 0, 8, 0],[0, 0, 0, 0, 0, 0, 4, 7, 0],[5, 2, 0, 0, 7, 0, 0, 0, 4],[0, 0, 0, 1, 0, 6, 0, 0, 0],[7, 0, 0, 0, 5, 0, 0, 3, 9],[0, 9, 7, 0, 0 ,0, 0, 0, 0],[0, 6, 0, 0, 0, 3, 0, 0, 5],[0, 0, 5, 0, 0, 0, 7, 9, 0]]
 GridCopy = [R[:] for R in Grid]
 IR = lambda N : N // 9
 IC = lambda N : N % 9
 NValue = lambda G, N : G[IR(N)][IC(N)]
 def SubGrid(G, N):
-    ISR = IR(N) // 3 * 3
-    ISC = IC(N) // 3 * 3
-    SubGrid = []
-    for R in range(0, 3):
-        SubGrid += G[ISR+R][ISC:ISC+3]
-    return SubGrid
+	ISR = IR(N) // 3 * 3
+	ISC = IC(N) // 3 * 3
+	SubGrid = []
+	SubGrid += (G[ISR+R][ISC:ISC+3] for R in range(0, 3))
+	return SubGrid
 Row = lambda G, N : G[IR(N)][0:9]
 Column = lambda G, N : [R[IC(N)] for R in G]
 print(*Grid, sep="\n")

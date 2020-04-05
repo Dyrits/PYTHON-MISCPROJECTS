@@ -9,4 +9,4 @@ PYTHON 3
 Dylan J. Gerrits
 
 ### Notes:  
-This is the first project (which was made 3 days after I started to learn Python 3 as my first programming language). I wanted to do it without using Numpy.
+This is the first project in Python (which was made 3 days after I started to learn Python 3 as my first programming language). I wanted to do it without using any external libraries.

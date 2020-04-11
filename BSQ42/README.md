@@ -5,7 +5,9 @@ The project was introduced to me as an exercice they have to do in some computin
 
 ### Programming language:
 PYTHON 3
-> How long I have been learning this language when the project was made? Around a week~
 
 ### Authors:  
 Dylan J. Gerrits
+
+### Status:  
+Finished

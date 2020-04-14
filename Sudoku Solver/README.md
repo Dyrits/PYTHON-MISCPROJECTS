@@ -5,13 +5,7 @@ It is using a backtracking method, selecting the first valid option for every ce
 
 This is the first project in Python I had made after 3 days starting to learn programming. I wanted to do it without using any external libraries, and didn't much about them anyway at that time. The way I am naming the variables and functions is not very conventional, since I didn't know about that neither.
 
-### Programming language:
-PYTHON 3
-
-### Authors:  
-Dylan J. Gerrits
+(This project will probably be reworked in the future.)
 
 ### Status:  
-Finished
-
-
+Finished 

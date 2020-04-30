@@ -56,21 +56,24 @@ def remove_extension(extension, category=None):
 # VARIABLES
 path = pathlib.Path(__file__).resolve().parent
 
-folders = {"Music": ("mp3", "wav"),
-            "Videos": ("mp4", "mov"),
-            "Images": ("jpeg", "jpg", "png"),
-            "Documents": ("pdf", "txt")}
+folders = {"Applications": (".exe", ".msi"),
+           "Music": (".mp3", ".wav", ".flac"),
+           "Videos": (".mp4", ".mov", ".avi"),
+           "Images": (".jpeg", ".jpg", ".png"),
+           "Documents": (".pdf", ".txt"),
+           "Books": (".epub", ".mobi"),
+           "Temporary Files": (".tmp",),
+           "Compressed Files": (".zip", ".rar")}
 
 # add_extension(extension, category) # To add an extension in a new category or in an existing one.
 # remove_extension(extension, category=None) # To remove a targeted extension in a category, which can be specified (or not).
 
-files_path = os.path.join(path, "**")
+files_path = os.path.join(path, "*")
 files = glob(files_path, recursive=True)
 
 for file in files:
-    for folder, extension in folders.items():
-        if file.endswith(extension):
-            folder_path = os.path.join(path, folder)
-            os.makedirs(folder_path, exist_ok=True)
+    for category, extension in folders.items():
+        if file.lower().endswith(extension):
+            folder_path = os.path.join(path, category)
+            os.makedirs(folder_path, exist_ok = True)
             shutil.move(file, folder_path)
-

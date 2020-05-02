@@ -1,11 +1,9 @@
 #! /usr/bin/env python3
 # coding: utf-8
 
-"""
-FUNCTIONS
-These functions allow to find the details about the position of a cell in the grid given its position (from 0 to 80).
-With these functions, it is possible to know in which row, column and (3X3) grid the cell is located.
-"""
+# FUNCTIONS
+# These functions allow to find the details about the position of a cell in the grid given its position (from 0 to 80).
+# With these functions, it is possible to know in which row, column and (3X3) grid the cell is located.
 
 def get_index_row(tracking_position):
     return tracking_position // 9

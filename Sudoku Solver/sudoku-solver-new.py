@@ -1,4 +1,12 @@
-#FUNCTIONS
+#! /usr/bin/env python3
+# coding: utf-8
+
+"""
+FUNCTIONS
+These functions allow to find the details about the position of a cell in the grid given its position (from 0 to 80).
+With these functions, it is possible to know in which row, column and (3X3) grid the cell is located.
+"""
+
 def get_index_row(tracking_position):
     return tracking_position // 9
 
@@ -27,7 +35,7 @@ def get_subgrid(grid, tracking_position):
     return [cells for row in rows for cells in row]
 
 
-# GRID
+# EXAMPLE GRID
 grid = [[0, 3, 2, 0, 0, 0, 5, 0, 0],
         [4, 0, 0, 2, 0, 0, 0, 8, 0],
         [0, 0, 0, 0, 0, 0, 4, 7, 0],

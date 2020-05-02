@@ -1,4 +1,3 @@
-import pathlib
 import os
 import shutil
 from glob import glob
@@ -54,7 +53,7 @@ def remove_extension(extension, category=None):
 
     
 # VARIABLES
-path = pathlib.Path(__file__).resolve().parent
+path = os.path.dirname(__file__)
 
 folders = {"Applications": (".exe", ".msi"),
            "Music": (".mp3", ".wav", ".flac"),

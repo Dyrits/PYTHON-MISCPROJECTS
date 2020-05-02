@@ -42,9 +42,11 @@ grid = [[0, 3, 2, 0, 0, 0, 5, 0, 0],
 # MAIN FUNCTION
 def main(grid):
     print(*grid, sep="\n")
+
     grid_copy = [row[:] for row in grid]
     tracking_position = 0
     tracking_way = 1
+
     while tracking_position < 81:
 
         actual_value_copy = get_actual_value(grid_copy, tracking_position)

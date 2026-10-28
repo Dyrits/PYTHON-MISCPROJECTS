@@ -1,8 +1,10 @@
 # Python Miscellaneous Projects
 
+## About The Project
+
 A collection of small, unrelated Python projects, each in its own directory with its own README.
 
-## Projects
+### Projects
 
 - **BSQ42** - finds the biggest square of "1"s in a grid of 1s and 0s (0 being obstacles), inspired by the BSQ exercise from schools like 42. Status: finished, per the project README.
 - **Files sorter** - automatically sorts the files of a folder into category folders based on their extensions. Status: finished, per the project README.
@@ -10,7 +12,7 @@ A collection of small, unrelated Python projects, each in its own directory with
 
 From the original README: the Sudoku Solver project has been moved to its own repository, [PYTHON-PP-SS](https://github.com/Dyrits/PYTHON-PP-SS).
 
-## Built With
+### Built With
 
 - Python
 
